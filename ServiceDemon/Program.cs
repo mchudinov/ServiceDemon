@@ -1,12 +1,17 @@
 ﻿using System;
+using System.ServiceProcess;
 
 namespace ServiceDemon
 {
-    class MainClass
+    class Program
     {
+        #if (DEBUG != true)
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            ServiceBase[] ServicesToRun;
+            ServicesToRun = new ServiceBase[] { new ServiceDemon.Service() };
+            ServiceBase.Run(ServicesToRun);
         }
+        #endif
     }
 }
