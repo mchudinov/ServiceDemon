@@ -1,5 +1,4 @@
-﻿using System;
-using Quartz;
+﻿using Quartz;
 using log4net;
 
 namespace ServiceDemon.Jobs
