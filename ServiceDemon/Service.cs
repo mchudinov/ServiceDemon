@@ -28,14 +28,14 @@ namespace ServiceDemon
             Scheduler.Shutdown();
         }
 
-        private void StartScheduler()
+        void StartScheduler()
         {
             ISchedulerFactory schedFact = new StdSchedulerFactory();
             Scheduler = schedFact.GetScheduler();
             Scheduler.Start();
         }
 
-        private void StartMyJob()
+        void StartMyJob()
         {
             var seconds = Int16.Parse(ConfigurationManager.AppSettings["MyJobSeconds"]);
             log.InfoFormat("Start MyJob. Execute once in {0} seconds", seconds);
