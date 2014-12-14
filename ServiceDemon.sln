@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServiceDemon", "ServiceDemon\ServiceDemon.csproj", "{C3B16770-0F7D-439E-ABD8-703CD1B39338}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9D4546FE-423F-4F8A-9FD4-AC3B40AC8CD2}"
+	ProjectSection(SolutionItems) = preProject
+		ServiceDemon\demon.sh = ServiceDemon\demon.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -14,7 +19,6 @@ Global
 		{C3B16770-0F7D-439E-ABD8-703CD1B39338}.Release|x86.ActiveCfg = Release|x86
 		{C3B16770-0F7D-439E-ABD8-703CD1B39338}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
-	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ServiceDemon\ServiceDemon.csproj
+	GlobalSection(NestedProjects) = preSolution
 	EndGlobalSection
 EndGlobal
