@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEMON_NAME="MyDemon"
-LOCK_FILE="/tmp/"${DEMON_NAME}".lock"
+PROGRAM_NAME="ServiceDemon"
+LOCK_FILE="/tmp/"${PROGRAM_NAME}".lock"
 
 usage()
 {
@@ -28,7 +28,7 @@ stop()
 
 start()
 {
-    mono-service -l:${LOCK_FILE} ./ServiceDemon.exe
+    mono-service -l:${LOCK_FILE} ./${PROGRAM_NAME}.exe
 }
 
 case $1 in
