@@ -16,10 +16,10 @@ stop()
         kill $_pid
         rt=$?
         if [ "$rt" == "0" ]
-        then
-                echo "Demon stop"
-        else
-                echo "Error stop demon"
+	        then
+	                echo "Demon stop"
+	        else
+	                echo "Error stop demon"
         fi
     else
         echo "Demon is not running"
