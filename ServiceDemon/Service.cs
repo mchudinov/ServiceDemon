@@ -12,6 +12,7 @@ namespace ServiceDemon
 
         public Service() 
         {
+            ServiceName = "ServiceDemon";
             _scheduler = new ServiceDemon.Scheduler();
         }
 
