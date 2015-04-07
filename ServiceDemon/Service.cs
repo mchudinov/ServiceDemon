@@ -35,9 +35,10 @@ namespace ServiceDemon
         // How to: Debug the OnStart Method http://msdn.microsoft.com/en-us/library/cktt23yw.aspx
         // How to: Debug Windows Service Applications http://msdn.microsoft.com/en-us/library/7a50syb3%28v=vs.110%29.aspx
         public static void Main(String[] args)
-        {      
+        {
+            log.Info("Program starting");
             (new ServiceDemon.Service()).OnStart(new string[1]);
-            ServiceBase.Run( new ServiceDemon.Service() );
+            //ServiceBase.Run( new ServiceDemon.Service() );
         }
         #endif
     }
