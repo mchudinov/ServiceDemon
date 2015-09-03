@@ -3,3 +3,4 @@ packages
 *.userprefs
 ServiceDemon/obj
 ServiceDemon/bin
+/.vs/
