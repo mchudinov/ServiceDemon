@@ -1,4 +1,5 @@
-packages/
+packages
+.localhistory
 *.userprefs
-ServiceDemon/obj/
-ServiceDemon/bin/
+ServiceDemon/obj
+ServiceDemon/bin
