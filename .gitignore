@@ -4,3 +4,4 @@ packages
 ServiceDemon/obj
 ServiceDemon/bin
 /.vs/
+*.suo
